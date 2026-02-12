@@ -1,0 +1,132 @@
+/* Contenedor principal */ 
+.jueguitos {
+    background: linear-gradient(135deg, #cd82ff, #6d2cbf); /* Degradado en ángulo */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* Resalta el contenedor */
+}
+
+/* Título principal */
+.jueguitos h1 {
+    color: #ffffff; /* Color cian */
+    text-shadow: 0 0 15px rgba(255, 153, 0, 0.8); 
+    font-size: 36px; 
+    text-align: center; 
+    margin-bottom: 30px;
+    padding: 10px 20px; 
+    border: 2px solid #fff; 
+    border-radius: 100px;
+    background-color: #ffd67e; /* Fondo oscuro */
+}
+
+h2 {
+    color: rgb(255, 255, 255); 
+    text-shadow: 0 0 10px rgba(255, 0, 234, 0.863); 
+    font-size: 28px; 
+    border-radius: 100px; 
+    text-align: center; 
+}
+
+/* Contenedores individuales para cada juego */
+.juego {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre imagen y texto */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro translúcido */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 230, 85, 0.8); /* Sutil resplandor */
+    margin: 20px 0;
+    padding: 20px;
+}
+
+/* Texto dentro de cada juego */
+.juego p {
+    color: #ffffff; /* Texto blanco */
+    font-size: 20px; /* Aumento del tamaño del texto */
+    margin: 0; /* Elimina márgenes extra */
+    flex: 1; /* Distribuye espacio equitativamente */
+    text-align: justify; /* Ajusta alineación del texto */
+}
+
+/* Estilo de las imágenes */
+.juego img {
+    width: 150px; /* Tamaño reducido */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 140, 119, 0.8); /* Efecto brillante */
+    cursor: pointer; /* Indica que es clicable */
+    flex-shrink: 0; /* Evita que la imagen se deforme */
+}
+
+/* Modal para ampliar imágenes */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+}
+
+/* Contenido del modal */
+.modal-content {
+    margin: auto; 
+    display: block; 
+    width: 80%; 
+    max-width: 800px; 
+    max-height: 80%;
+    border: 5px solid #ffa0ff; /* Borde cian */
+    border-radius: 10px;
+}
+
+/* Botón de cerrar */
+.close {
+    position: absolute; 
+    top: 15px;
+    right: 35px;
+    color: #fff; 
+    font-size: 30px; 
+    font-weight: bold;
+    transition: 0.3s; 
+}
+
+.close:hover, .close:focus {
+    color: #bbb; 
+    text-decoration: none; 
+    cursor: pointer; 
+}
+
+/* Estilos para el botón "Volver al inicio" con imagen */
+.back-to-top {
+    background-color: transparent; /* Sin color de fondo */
+    border: none;
+    padding: 0; /* Sin relleno, solo la imagen */
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px; /* Posición desde la parte inferior */
+    right: 30px; /* Posición desde la parte derecha */
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+/* Estilo de la imagen dentro del botón */
+.back-to-top-img {
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+/* Efecto hover: agrandar la imagen */
+.back-to-top:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+}
+
+/* Asegurar que el contenido de la página no cubra el botón */
+html, body {
+    height: 100%;
+}

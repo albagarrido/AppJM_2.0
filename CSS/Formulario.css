@@ -1,0 +1,123 @@
+/* Estilo general del formulario */
+.formulario {
+    background-color: #ff77c6;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+}
+
+/* Título del formulario */
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Etiquetas del formulario */
+.formulario label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Campos del formulario */
+.formulario select,
+.formulario input[type="number"],
+.formulario input[type="text"] {
+    width: 100%; /* Asegura que todos los campos ocupen el mismo ancho */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box; /* Asegura que el padding y border no afecten el tamaño */
+}
+
+/* Botones del formulario */
+.formulario .botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario .botones button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Botón de enviar */
+.formulario .botones button[type="submit"] {
+    background-color: #b962ff;
+    color: white;
+}
+
+.formulario .botones button[type="submit"]:hover {
+    background-color: #a452e0;
+}
+
+/* Botón de resetear */
+.formulario .botones button[type="reset"] {
+    background-color: #ff7c55;
+    color: white;
+}
+
+.formulario .botones button[type="reset"]:hover {
+    background-color: #e96c45;
+}
+
+/* Botón general */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff9e1f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e87a13;
+}
+
+/* Contenedor de juegos */
+.juegosContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+
+/* Tarjetas de juegos */
+.juego {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.juego img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.juego h3 {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.juego p {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}

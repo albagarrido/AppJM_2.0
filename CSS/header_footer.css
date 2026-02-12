@@ -1,0 +1,86 @@
+body {
+/*    background-image: url('../IMAGENES/fondo6.jpg'); */    
+    background-color: rgb(255, 233, 115);
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+header {
+    width: 100%;
+    height: auto; 
+    background-image: url('../IMAGENES/fondo1.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+    padding: 20px 0; 
+}
+
+
+.logo h1 {
+    font-size: 48px;
+    color: white;
+    margin: 0;
+    font-weight: 600;
+}
+
+
+.iconos {
+    display: flex;
+    align-items: center; 
+    margin-top: 10px; 
+}
+
+.iconos img {
+    height: 50px; 
+    width: 50px;  
+    transition: transform 0.3s;
+}
+
+.iconos img:hover {
+    transform: scale(1.2); 
+}
+
+
+header nav {
+    margin-top: 20px; 
+    background-color: rgb(255, 158, 31);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f5f5f5;
+}
